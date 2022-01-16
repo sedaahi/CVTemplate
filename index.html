@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Licorice&family=Montserrat:wght@100&family=Permanent+Marker&family=Roboto:wght@300&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #424242;
+            margin: 0px;
+            height: 100%;
+            width: 100%;
+            font-size: 15px;
+            line-height: 1.6em;
+            background-color: #f5f5f5;
+            overflow-x: hidden;
+            overflow-y: auto;
+            background-image: url(/sp_main_bg.png);
+            background-attachment: fixed;
+            background-position: center center;
+            background-repeat: no-repeat;
+
+        }
+
+
+        a {
+            background-color: transparent;
+            text-decoration: none;
+            outline: none;
+        }
+
+        p {
+            font-size: 15px;
+            margin: 0 0 10px;
+            font-weight: 400;
+        }
+
+        div {
+            display: block;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #f5f5f5;
+            position: sticky;
+            top: 0;
+        }
+
+        .navUl {
+            position: sticky;
+            top: 0;
+            width: 100%;
+        }
+
+        li {
+            float: right;
+        }
+
+        li a {
+            display: block;
+            color: #212121;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+
+        nav {
+            box-shadow: 0 1px 1px rgb(0 0 0 / 10%), 0 2px 4px rgb(0 0 0 / 30%);
+            display: flex;
+            position: sticky;
+
+        }
+
+        #navAlexSmith {
+            float: left;
+            font-size: 20px;
+        }
+
+        li a:hover {
+            text-underline-position: below;
+        }
+
+        .nav {
+            padding: 15px;
+            display: flex;
+            position: sticky;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .mainGreen {
+            font-size: 25px;
+            color: #f5f5f5;
+            background-color: #2eca7f;
+            margin: 5px 0px 0px 0px;
+            padding: 15px;
+            margin-left: 100px;
+            margin-right: 100px;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            background-image: url(/sp_main_bg.png);
+            background-attachment: fixed;
+            background-position: center center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+
+        }
+
+        .mainGray {
+            margin: 0px;
+            padding: 0 30px 30px 30px;
+            margin-left: 100px;
+            margin-right: 100px;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            box-shadow: 0 1px 1px rgb(0 0 0 / 10%), 0 2px 4px rgb(0 0 0 / 30%);
+            z-index: 1;
+
+        }
+
+        .baslik {
+            padding-right: 255px;
+        }
+
+        .main1-name {
+            margin: 0;
+            padding: 3px;
+            text-align: right;
+            padding-left: 200px;
+            font-size: 30px;
+        }
+
+        .AboutMe {
+            padding: 25px 0 25px 25px;
+            margin-right: 35%;
+            font-weight: bold;
+        }
+
+        .info {
+            margin: 0;
+        }
+
+        .info-right p {
+            color: rgb(148, 148, 148);
+        }
+
+        .btnDownload {
+            background-color: #fff;
+            color: #212121;
+            box-shadow: 0 1px 1px rgb(0 0 0 / 10%), 0 2px 4px rgb(0 0 0 / 30%);
+            display: inline-block;
+            padding: 6px 12px;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            user-select: none;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 14px;
+            line-height: 2.8;
+            padding: 0 1.5em;
+            border: 0;
+
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            color: #636363;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        @media only screen and (min-width : 1525px) {
+            .dis {
+                width: 964px;
+
+            }
+        }
+
+        @media only screen and (min-width : 3415px) {
+            .dis {
+                width: 970px;
+
+            }
+        }
+
+        li>a {
+            display: inline-block;
+            padding-bottom: 0.25rem;
+            position: relative;
+        }
+
+        li>a::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: #2eca7f;
+            transition: width 0.25s ease-out;
+        }
+
+        li>a:hover::before {
+            width: 100%;
+        }
+
+        .photo {
+            height: 250px;
+            width: 250px;
+            border: 3px solid whitesmoke;
+            margin: 0px 14px;
+            box-shadow: 0 1px 1px rgb(0 0 0 / 10%), 0 2px 4px rgb(0 0 0 / 30%);
+            transition: 0.5s;
+            /* position: absolute;
+            bottom:200px ; */
+
+
+        }
+
+        .photo-container {
+            width: 80%;
+            margin: 0;
+            padding: 10px 10px;
+            z-index: 10;
+            bottom: 50px;
+        }
+
+        .photo:hover {
+            transform: scale(1.1);
+            background-color: #424242;
+            z-index: 10;
+        }
+        .info-left{
+            padding-right: 50px;
+        }
+        .info-right{
+            padding-right: 200px;
+        }
+
+        /* .WebDesigner{
+            display: none;
+        }
+        .FrontendDev:hover{
+            display: none;
+        }
+        .WebDesigner:hover{
+         display:inline;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- <div class="navbarAlexSmith">Alex<span id="navSmith">Smith</span></div> -->
+    <nav class="nav">
+        <ul class="navUl"> <strong>
+                <li>
+                    <a href="#Contact">Contact</a>
+                </li>
+                <li>
+                    <a href="#Blog">Blog</a>
+                </li>
+                <li>
+                    <a href="#Portfolio">Portfolio</a>
+                </li>
+
+                <li>
+                    <a href="#Services">Services</a>
+                </li>
+                <li>
+                    <a href="#Resume">Resume</a>
+                </li>
+                <li class="active">
+                    <a href="#Home">Home</a>
+                </li>
+                <li id="navAlexSmith">
+                    <a href=""> <strong>Alex <span style="color: #2eca7f;" id="navSmith">Smith</strong></span></a>
+                </li>
+            </strong>
+        </ul>
+    </nav>
+    <div class="main">
+        <div class="mainGreen">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="photo-container">
+                                <div class="photo">
+                                    <img src="photo.png" alt="photo">
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="baslik">
+                                <div class="main1-name">
+                                    <h1>Alex Smith</h1>
+                                    <h6 class="FrontendDev" style="text-align: center;">Frontend-Developer</h6>
+                                    <!-- <h6 class="WebDesigner"style="text-align: center;">Web Designer</h6> -->
+                                    <div class="social-links" style="text-align: center;">
+                                        <a style="color: #424242;" href="#"><i class="fab fa-twitter"></i></a>
+                                        <a style="color: #424242;" href="#"><i class="fab fa-facebook"></i></a>
+                                        <a style="color: #424242;" href="#"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="mainGray">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="AboutMe">
+                                <h3 style="color: black;"><strong>About <span style="color:#2eca7f ;">Me</span></strong>
+                                </h3>
+                                <p><strong> Hello! I’m Alex Smith. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Aenean
+                                        fermentum ullamcorper sem, at placerat dolor volutpat ac. Duis nulla enim,
+                                        condimentum
+                                        nec ultricies.</strong></p>
+                                <button class="btnDownload">DOWNLOAD RESUME</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="info">
+                        <td class="info-left">
+                            <p><strong>Age</strong></p>
+                            <p><strong>Residence</strong></p>
+                            <p><strong>Address</strong></p>
+                            <p><strong>e-mail</strong></p>
+                            <p><strong>Phone</strong></p>
+                            <p><strong>Freelance</strong></p>
+                        </td>
+                        <td class="info-right">
+                            <p><strong>29</strong></p>
+                            <p><strong>USA</strong></p>
+                            <p><strong>Los Angeles, USA</strong></p>
+                            <p><a style="color: #2cc47b;" href=""><strong>email@example.com</strong></a></p>
+                            <p><strong>+0123 123 456 789</strong></p>
+                            <p><strong>Available</strong></p>
+                        </td>
+        </div>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+    </div>
+    <footer>
+        <div class="copyrights">© 2020 All rights reserved. Material template by LMPixels</div>
+    </footer>
+</body>
+
+</html>
